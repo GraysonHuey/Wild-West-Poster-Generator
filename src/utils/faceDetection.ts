@@ -15,7 +15,6 @@ export async function loadModels(): Promise<void> {
   if (modelsLoaded) return;
 
   try {
-    // Dynamically import face-api.js library (code splitting)
     if (!faceapi) {
       faceapi = await import('face-api.js');
     }
