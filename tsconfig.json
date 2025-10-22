@@ -1,0 +1,17 @@
+{
+  // TypeScript Project References Configuration
+  // This is the root tsconfig that doesn't compile any files itself
+  // Instead, it references other TypeScript configurations for different parts of the project
+
+  // No files are compiled by this configuration directly
+  "files": [],
+
+  // Project references - TypeScript will check these configurations
+  // This allows for separate compiler settings for different parts of the codebase
+  "references": [
+    // Reference to the main application TypeScript configuration
+    { "path": "./tsconfig.app.json" },
+    // Reference to the Node.js (build tools) TypeScript configuration
+    { "path": "./tsconfig.node.json" }
+  ]
+}
